@@ -25,7 +25,7 @@ function createIframe(id) {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
   iframe.setAttribute('src', generateURL(id));
-  iframe.classList.add('video_iframe');
+  iframe.classList.add('video__media');
 
   return iframe;
 }

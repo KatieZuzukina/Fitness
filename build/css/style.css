@@ -2093,6 +2093,10 @@ button,
   font-size: 18px;
 }
 
+.event__image {
+  min-width: 100%;
+}
+
 .event__date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2723,8 +2727,7 @@ button,
   align-items: center;
   padding-top: 38px;
   padding-bottom: 38px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  gap: 10px 100px;
 }
 
 .footer__logo-title {
@@ -2770,11 +2773,19 @@ button,
   opacity: 0.8;
 }
 
+.social {
+  gap: 5px 11px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 11px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2890,7 +2901,7 @@ button,
 }
 
 .coaches__wrapper {
-  position: static;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3272,6 +3283,7 @@ button,
     right: 0;
     width: 342px;
     height: 437px;
+    background-image: url("../img/barbells-tablet@2x.webp");
   }
 
   .subscription h2 {
@@ -3551,6 +3563,7 @@ button,
     padding-top: 45px;
     padding-bottom: 33px;
     max-width: 100%;
+    gap: 10px;
   }
 
   .footer__logo-image {
@@ -4073,6 +4086,7 @@ button,
     -moz-column-count: 2;
     column-count: 2;
     margin: 0;
+    gap: 75px;
   }
 
   .footer__list li {
@@ -4097,7 +4111,7 @@ button,
   }
 
   .reviews__wrapper {
-    max-width: 100%;
+    max-width: 340px;
     padding: 33px 47px 70px;
   }
 
@@ -4146,13 +4160,13 @@ button,
   }
 
   .reviews__button-prev {
-    top: 52%;
-    right: 10%;
+    top: 53%;
+    left: 3%;
   }
 
   .reviews__button-next {
-    top: 53%;
-    right: 88%;
+    top: 52%;
+    left: 89%;
   }
 
   .reviews__icon {
@@ -4193,13 +4207,18 @@ button,
     padding: 0;
   }
 
+  .coaches__button {
+    width: 10px;
+    height: 19px;
+  }
+
   .coaches__button-next {
-    top: 46.3%;
+    top: 47%;
     right: 13px;
   }
 
   .coaches__button-prev {
-    top: 46.3%;
+    top: 47%;
     left: 13px;
   }
 

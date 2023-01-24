@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    max-width: 100%;
+    max-width: 340px;
     padding: 33px 47px 70px;
   }
 
@@ -135,8 +135,8 @@
 
 .reviews__button-prev {
   @include vp-767 {
-    top: 52%;
-    right: 10%;
+    top: 53%;
+    left: 3%;
   }
 }
 
@@ -149,8 +149,8 @@
   }
 
   @include vp-767 {
-    top: 53%;
-    right: 88%;
+    top: 52%;
+    left: 89%;
   }
 }
 

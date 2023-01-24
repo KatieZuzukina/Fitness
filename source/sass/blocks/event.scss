@@ -83,6 +83,10 @@
   }
 }
 
+.event__image {
+  min-width: 100%;
+}
+
 .event__date {
   display: flex;
   column-gap: 35px;
