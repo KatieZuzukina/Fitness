@@ -1,0 +1,246 @@
+.promotion {
+  padding-bottom: 30px;
+
+  h2 {
+    font-family: $ff-alumni;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 36px;
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 600;
+    text-align: center;
+
+    @include vp-1199 {
+      font-size: 42px;
+      margin-right: 8px;
+      margin-bottom: 31px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.promotion__wrapper {
+  display: flex;
+  gap: 20px 40px;
+  justify-content: center;
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+    row-gap: 31px;
+  }
+
+  @include vp-767 {
+    max-width: 460px;
+  }
+}
+
+.promotion__promo {
+  align-self: center;
+}
+
+.promotion__promo-inner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+  @include vp-767 {
+    flex-wrap: wrap;
+  }
+}
+
+.promotion__promo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 280px;
+  min-height: 462px;
+  padding: 35px 45px 45px;
+  color: $color-default-white;
+  background-color: $color-red;
+  font-weight: 700;
+
+  @include vp-1199 {
+    padding-bottom: 43px;
+    padding-top: 44px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    min-height: 299px;
+    padding-bottom: 45px;
+    align-items: center;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+
+    @include vp-767 {
+      text-align: center;
+      margin-top: -5px;
+      margin-bottom: 25px;
+    }
+  }
+
+  a {
+    position: relative;
+    font-size: 14px;
+    margin: auto auto 0 0;
+    text-transform: uppercase;
+    color: $color-default-white;
+    letter-spacing: 0.05em;
+
+    @include hover-focus {
+      opacity: 0.8;
+      transition: $trans-default;
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $color-default-white;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: 1px;
+      right: 0;
+    }
+  }
+}
+
+.promotion__promo-year {
+  margin: 0;
+  font-size: 28px;
+}
+
+.promotion__info {
+  flex-grow: 1;
+}
+
+.promotion__info-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px 0;
+
+  @include vp-1199 {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.promotion__promo-cost {
+  font-size: 70px;
+  margin: 32px 0 39px;
+}
+
+.promotion__info-container {
+  color: $color-resolution-blue;
+  display: flex;
+  flex-direction: column;
+  min-height: 211px;
+  max-width: 560px;
+  width: 100%;
+  border: 7px solid;
+  border-image: $border-gradient;
+  padding: 19px 28px 27px;
+
+  @include vp-1199 {
+    max-width: 324px;
+    padding: 25px 42px 30px 28px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    text-align: center;
+    padding: 36px 29px 36px 28px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-top: 11px;
+  }
+
+  a {
+    position: relative;
+    color: $color-resolution-blue;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto auto 0 0;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    line-height: 14px;
+    outline-color: $color-sapphire;
+
+    @include hover-focus {
+      opacity: 0.8;
+      transition: $trans-default;
+    }
+
+    @include vp-767 {
+      margin: auto;
+      margin-top: 24px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $color-resolution-blue;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: -1px;
+      right: 0;
+
+      @include vp-1199 {
+        bottom: -2px;
+      }
+    }
+  }
+}
+
+.promotion__picture {
+  margin: 0;
+  background-color: $color-sapphire;
+
+  @include vp-767 {
+    width: 100%;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+
+    @include vp-1199 {
+      min-width: 399px;
+      height: 462px;
+    }
+
+    @include vp-767 {
+      min-width: 100%;
+      max-height: 500px;
+      height: calc(100vw - 21px);
+    }
+  }
+}

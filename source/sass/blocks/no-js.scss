@@ -1,0 +1,24 @@
+.no-js {
+  .tabs__buttons {
+    display: none;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    gap: 20px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // .coaches__icon {
+  //   display: none;
+  // }
+
+  // .reviews__icon {
+  //   display: none;
+  // }
+
+  .video__button {
+    pointer-events: none;
+  }
+}
