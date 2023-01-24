@@ -36,6 +36,10 @@
   cursor: pointer;
 }
 
+.video.is-active .video__button {
+  display: block;
+}
+
 .video__media {
   position: absolute;
   top: 0;

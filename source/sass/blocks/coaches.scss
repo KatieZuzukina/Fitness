@@ -204,6 +204,16 @@
   flex-direction: row;
 }
 
+.coaches__button {
+  padding: 0;
+  color: $color-dark-grey;
+
+  @include hover-focus {
+    outline-offset: 2px;
+    outline-color: $color-sapphire;
+  }
+}
+
 .coaches__button-next,
 .coaches__button-prev {
   position: absolute;

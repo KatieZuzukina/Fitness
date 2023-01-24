@@ -25,14 +25,4 @@
   @include focus {
     outline: 2px solid;
   }
-
-  &--slider {
-    padding: 0;
-    color: $color-dark-grey;
-
-    @include hover-focus {
-      outline-offset: 2px;
-      outline-color: $color-sapphire;
-    }
-  }
 }

@@ -1752,6 +1752,10 @@ button,
   cursor: pointer;
 }
 
+.video.is-active .video__button {
+  display: block;
+}
+
 .video__media {
   position: absolute;
   top: 0;
@@ -2036,16 +2040,6 @@ button,
 
 .btn.focus-visible:focus {
   outline: 2px solid;
-}
-
-.btn--slider {
-  padding: 0;
-  color: #afafaf;
-}
-
-.btn--slider.focus-visible:focus {
-  outline-offset: 2px;
-  outline-color: #102654;
 }
 
 .event {
@@ -2848,7 +2842,7 @@ button,
 }
 
 .reviews__inner span {
-  display: inline-block;
+  display: block;
   -ms-grid-column: 2;
   grid-column: 2;
   line-height: 1.4;
@@ -3050,6 +3044,16 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.coaches__button {
+  padding: 0;
+  color: #afafaf;
+}
+
+.coaches__button.focus-visible:focus {
+  outline-offset: 2px;
+  outline-color: #102654;
 }
 
 .coaches__button-next,
@@ -4240,11 +4244,6 @@ button,
     opacity: 0.8;
   }
 
-  .btn--slider:hover:not(.focus-visible) {
-    outline-offset: 2px;
-    outline-color: #102654;
-  }
-
   .promotion__promo-container a:hover:not(.focus-visible) {
     opacity: 0.8;
     -webkit-transition: 0.3s ease;
@@ -4277,5 +4276,10 @@ button,
   .social__link:hover:not(.focus-visible) {
     opacity: 0.8;
     outline-color: #ffffff;
+  }
+
+  .coaches__button:hover:not(.focus-visible) {
+    outline-offset: 2px;
+    outline-color: #102654;
   }
 }
