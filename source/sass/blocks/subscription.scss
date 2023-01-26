@@ -228,6 +228,35 @@
   }
 }
 
+.subscription__btn {
+  display: inline-flex;
+  padding: 22px 42px;
+  justify-content: center;
+  outline-offset: 3px;
+  color: $color-default-white;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity $trans-default;
+
+  @include vp-1199 {
+    padding: 24px 23px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    outline: 2px solid;
+  }
+}
+
 .subscription__buttons {
   margin-bottom: 8px;
   width: 100%;

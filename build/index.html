@@ -48,9 +48,9 @@
                 <li>Кардио-зона</li>
               </ul>
               <h1>Фитнес<br>центр</h1>
+              <a class="main__about-button btn" href="#tickets">Купить абонемент</a>
             </div>
 
-            <a class="main__about-button btn" href="#tickets">Купить абонемент</a>
           </div>
 
           <div class="main__about-picture">
@@ -127,21 +127,21 @@
                   <p>12 занятий</p>
                   <span class="subscription__min-text">5000</span>
                   <span class="subscription__max-text">5000</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
                 <li class="subscription__item" tabindex="0">
                   <h4>Дневной</h4>
                   <p>с 8:00 до 17:00</p>
                   <span class="subscription__min-text">1700</span>
                   <span class="subscription__max-text">1700</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
                 <li class="subscription__item" tabindex="0">
                   <h4>Полный день</h4>
                   <p>с 8:00 до 22:00</p>
                   <span class="subscription__min-text">2700</span>
                   <span class="subscription__max-text">2700</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -153,21 +153,21 @@
                   <p>12 занятий</p>
                   <span class="subscription__min-text">9000</span>
                   <span class="subscription__max-text">9000</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
                 <li class="subscription__item" tabindex="0">
                   <h4>Дневной</h4>
                   <p>с 8:00 до 17:00</p>
                   <span class="subscription__min-text">4100</span>
                   <span class="subscription__max-text">4100</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
                 <li class="subscription__item" tabindex="0">
                   <h4>Полный день</h4>
                   <p>с 8:00 до 22:00</p>
                   <span class="subscription__min-text">7000</span>
                   <span class="subscription__max-text">7000</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -179,21 +179,21 @@
                   <p>12 занятий</p>
                   <span class="subscription__min-text">9000</span>
                   <span class="subscription__max-text">9000</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
                 <li class="subscription__item" tabindex="0">
                   <h4>Дневной</h4>
                   <p>с 8:00 до 17:00</p>
                   <span class="subscription__min-text">4100</span>
                   <span class="subscription__max-text">4100</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
                 <li class="subscription__item" tabindex="0">
                   <h4>Полный день</h4>
                   <p>с 8:00 до 22:00</p>
                   <span class="subscription__min-text">7000</span>
                   <span class="subscription__max-text">7000</span>
-                  <a class="btn" href="#">купить абонемент</a>
+                  <a class="subscription__btn" href="#">купить абонемент</a>
                 </li>
               </ul>
             </div>
@@ -482,9 +482,13 @@
 
               <p class="promotion__picture">
                 <picture>
+                  <source type="image/webp" width="290" height="299" media="(max-width: 767px)" srcset="img/sales-mobile.webp 1x, img/sales-mobile@2x.webp 2x">
+                  <source type="image/webp" width="399" height="462" media="(max-width: 1199px)" srcset="img/sales-tablet.webp 1x, img/sales-tablet@2x.webp 2x">
                   <source type="image/webp" width="280" height="462" srcset="img/sales.webp 1x, img/sales@2x.webp 2x">
-                  <img srcset="img/sales@2x.jpg 2x" src="img/sales.jpg" width="280" height="462"
-                    alt="Девушка на фоне неба" loading="lazy">
+
+                  <source type="image/jpg" width="290" height="299" media="(max-width: 767px)" srcset="img/sales-mobile.jpg 1x, img/sales-mobile@2x.jpg 2x">
+                  <source type="image/jpg" width="399" height="462" media="(max-width: 1199px)" srcset="img/sales-tablet.jpg 1x, img/sales-tablet@2x.jpg 2x">
+                  <img srcset="img/sales@2x.jpg 2x" src="img/sales.jpg" width="280" height="462" alt="Девушка.">
                 </picture>
               </p>
             </div>
@@ -653,7 +657,7 @@
           <h2 class="social__heading  visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#" tabindex="1">
+              <a class="social__link" href="#">
                 <svg class="social__icon social__icon-vk" width="25" height="25" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
@@ -661,7 +665,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" tabindex="1">
+              <a class="social__link" href="#">
                 <svg class="social__icon social__icon-ok" width="25" height="25" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
@@ -669,7 +673,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" tabindex="1">
+              <a class="social__link" href="#">
                 <svg class="social__icon  social__icon-reddit" width="25" height="25" aria-hidden="true"
                   focusable="false">
                   <use xlink:href="img/sprite.svg#reddit"></use>

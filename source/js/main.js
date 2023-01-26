@@ -1,4 +1,3 @@
-import {iosVhFix} from './utils/ios-vh-fix';
 import {initTabs} from './modules/modals/tabs';
 import {findVideos} from './modules/modals/video';
 import {initSwiper} from './modules/modals/slider';
@@ -10,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  iosVhFix();
+
   initTabs();
   findVideos();
   initSwiper();

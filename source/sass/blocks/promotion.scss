@@ -60,7 +60,7 @@
   width: 100%;
   max-width: 280px;
   min-height: 462px;
-  padding: 35px 45px 45px;
+  padding: 41px 45px 45px;
   color: $color-default-white;
   background-color: $color-red;
   font-weight: 700;
@@ -157,7 +157,7 @@
   width: 100%;
   border: 7px solid;
   border-image: $border-gradient;
-  padding: 19px 28px 27px;
+  padding: 24px 28px 27px;
 
   @include vp-1199 {
     max-width: 324px;

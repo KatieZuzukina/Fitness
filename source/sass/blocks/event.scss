@@ -84,12 +84,28 @@
 }
 
 .event__image {
-  min-width: 100%;
+  max-width: fit-content;
+
+  @include vp-1199 {
+    min-width: 100%;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+  }
 }
 
 .event__date {
   display: flex;
-  column-gap: 35px;
+  column-gap: 61px;
+
+  @include vp-1199 {
+    column-gap: 36px;
+  }
+
+  @include vp-767 {
+    justify-content: space-around;
+  }
 
   h3 {
     font-family: $ff-alumni;
@@ -206,8 +222,8 @@
   }
 
   @include vp-767 {
-    max-width: 100%;
-    min-height: auto;
+    min-width: 100%;
+    min-height: 100%;
 
     img {
       min-height: 292px;
